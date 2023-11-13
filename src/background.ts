@@ -11,7 +11,7 @@ browser.runtime.onMessage.addListener(
       await browser.notifications.create('copy-2fa-from-android-messages', {
         type: 'basic',
         title: browser.i18n.getMessage('notificationTitle', [message.code]),
-        message: message.fullMessage,
+        message: `${message.sender}: ${message.fullMessage}`,
         iconUrl: browser.runtime.getURL('icons/logo.svg'),
       });
       await navigator.clipboard.writeText(message.code);
