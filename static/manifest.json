@@ -21,5 +21,10 @@
       "js": ["message-observer.mjs"]
     }
   ],
-  "default_locale": "en"
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "copy-2fa-from-android-messages@firefox.danielrozenberg.com"
+    }
+  }
 }
