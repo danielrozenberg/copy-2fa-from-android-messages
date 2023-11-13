@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Copy 2FA from Android Messages",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Copy 2FA codes from Android Messages so you can stop switching tabs",
+    "description": "Description of the extension."
+  },
+  "notificationTitle": {
+    "message": "Copied 2FA code \"$CODE$\" to clipboard",
+    "description": "Title of notification to inform that user that the 2FA code was copied to the clipboard.",
+    "placeholders": {
+      "code": {
+        "content": "$1",
+        "example": "923658"
+      }
+    }
+  }
+}

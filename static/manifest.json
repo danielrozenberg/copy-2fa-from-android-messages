@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "1.0.0",
+  "description": "__MSG_extensionDescription__",
+  "author": "Daniel Rozenberg",
+  "homepage_url": "https://github.com/danielrozenberg/copy-2fa-from-android-messages",
+  "icons": {
+    "48": "icons/logo.svg",
+    "96": "icons/logo.svg"
+  },
+  "background": {
+    "scripts": ["background.mjs"],
+    "type": "module"
+  },
+  "permissions": ["clipboardWrite", "notifications"],
+  "host_permissions": ["*://messages.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://messages.google.com/*"],
+      "js": ["message-observer.mjs"]
+    }
+  ],
+  "default_locale": "en"
+}

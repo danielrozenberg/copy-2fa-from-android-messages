@@ -1,0 +1,31 @@
+{
+  "name": "copy-2fa-from-android-messages",
+  "version": "1.0.0",
+  "description": "Copy 2FA codes from Android Messages so you can stop switching tabs",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielrozenberg/copy-2fa-from-android-messages"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:static && npm run build:esbuild",
+    "build:static": "cp -r static/* dist/",
+    "build:esbuild": "esbuild src/*.ts --bundle --format=esm --sourcemap --outdir=dist/ --out-extension:.js=.mjs",
+    "clean": "rm -rf dist/ && mkdir dist/",
+    "lint": "eslint ."
+  },
+  "author": "Daniel Rozenberg",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/webextension-polyfill": "0.10.6",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "esbuild": "0.19.5",
+    "eslint": "8.53.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  }
+}
