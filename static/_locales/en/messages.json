@@ -9,12 +9,24 @@
   },
   "notificationTitle": {
     "message": "Copied 2FA code \"$CODE$\" to clipboard",
-    "description": "Title of notification to inform that user that the 2FA code was copied to the clipboard.",
+    "description": "Title of notification to inform that user that the 2FA code was copied to the clipboard",
     "placeholders": {
       "code": {
         "content": "$1",
         "example": "923658"
       }
     }
+  },
+  "welcomeTitle": {
+    "message": "Welcome to Copy 2FA to Android Messages",
+    "description": "Title of the welcome page"
+  },
+  "welcomeDescription": {
+    "message": "This extension requires permission to access your data on Android Messages.",
+    "description": "Explanation of why the welcome page popped up"
+  },
+  "welcomeActionButton": {
+    "message": "Grant permission",
+    "description": "Text to display on the button that will trigger the grant permission workflow"
   }
 }

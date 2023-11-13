@@ -14,10 +14,10 @@
     "type": "module"
   },
   "permissions": ["clipboardWrite", "notifications"],
-  "host_permissions": ["*://messages.google.com/*"],
+  "host_permissions": ["https://messages.google.com/*"],
   "content_scripts": [
     {
-      "matches": ["*://messages.google.com/*"],
+      "matches": ["https://messages.google.com/*"],
       "js": ["message-observer.mjs"]
     }
   ],

@@ -1,5 +1,7 @@
 import { type Browser } from 'webextension-polyfill';
+
 import { type FoundTwoFactorAuthenticationCodePayload } from './common/payload';
+import { ANDROID_MESSAGES_HOST_PERMISSION } from './common/host-permission';
 
 declare const browser: Browser;
 
@@ -18,3 +20,12 @@ browser.runtime.onMessage.addListener(
     }
   },
 );
+
+browser.runtime.onInstalled.addListener(async () => {
+  if (!(await browser.permissions.contains(ANDROID_MESSAGES_HOST_PERMISSION))) {
+    await browser.tabs.create({
+      active: true,
+      url: browser.runtime.getURL('welcome.html'),
+    });
+  }
+});

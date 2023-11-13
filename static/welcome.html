@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-i18n-id="welcome-title"></title>
+  <style>
+    html {
+      background: #3d4753;
+    }
+
+    body {
+      font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif;
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    h1 {
+      color: #96a8c2;
+    }
+
+    p {
+      color: #ffffff;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    div button {
+      transform: scale(2) translateY(50%);
+    }
+  </style>
+</head>
+<body>
+  <h1 data-i18n-id="welcomeTitle"></h1>
+  <p data-i18n-id="welcomeDescription"></p>
+  <div>
+    <button id="grant" data-i18n-id="welcomeActionButton"></button>
+  </div>
+
+  <script src="./welcome.mjs" type="module"></script>
+</body>
+</html>
