@@ -1,6 +1,6 @@
 {
   "name": "copy-2fa-from-android-messages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Copy 2FA codes from Android Messages so you can stop switching tabs",
   "type": "module",
   "repository": {
