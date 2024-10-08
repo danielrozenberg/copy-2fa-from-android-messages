@@ -32,7 +32,7 @@ function initMessageObserver() {
       fullMessage,
     };
     console.log('Found possible 2FA code. Payload:', payload);
-    browser.runtime.sendMessage(payload);
+    await browser.runtime.sendMessage(payload);
   });
 
   observer.observe(document, { childList: true, subtree: true });
