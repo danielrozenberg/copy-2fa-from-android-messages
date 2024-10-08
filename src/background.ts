@@ -1,6 +1,5 @@
-import { type Browser } from 'webextension-polyfill';
+import type { Browser } from 'webextension-polyfill';
 
-import { type FoundTwoFactorAuthenticationCodePayload } from './common/payload';
 import { ANDROID_MESSAGES_HOST_PERMISSION } from './common/host-permission';
 
 declare const browser: Browser;

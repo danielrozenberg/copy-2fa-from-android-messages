@@ -1,6 +1,4 @@
-import { type Browser } from 'webextension-polyfill';
-
-import { type FoundTwoFactorAuthenticationCodePayload } from './common/payload';
+import type { Browser } from 'webextension-polyfill';
 
 declare const browser: Browser;
 
