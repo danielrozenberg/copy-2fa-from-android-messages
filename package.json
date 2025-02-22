@@ -18,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/eslint": "9.6.1",
-    "@types/eslint__js": "8.42.3",
+    "@types/eslint__js": "9.14.0",
     "@types/webextension-polyfill": "0.12.1",
     "esbuild": "0.24.0",
     "eslint": "9.12.0",
