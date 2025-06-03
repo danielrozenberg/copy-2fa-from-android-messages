@@ -1,10 +1,10 @@
-import type { Browser } from 'webextension-polyfill';
-
 import { ANDROID_MESSAGES_HOST_PERMISSION } from './common/host-permission';
+
+import type { Browser } from 'webextension-polyfill';
 
 declare const browser: Browser;
 
-browser.runtime.onMessage.addListener(async (_message) => {
+browser.runtime.onMessage.addListener(async (_message: unknown) => {
   const message = _message as FoundTwoFactorAuthenticationCodePayload;
   try {
     await browser.notifications.create('copy-2fa-from-android-messages', {

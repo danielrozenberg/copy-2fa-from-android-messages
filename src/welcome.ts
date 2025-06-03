@@ -1,6 +1,6 @@
-import type { Browser } from 'webextension-polyfill';
-
 import { ANDROID_MESSAGES_HOST_PERMISSION } from './common/host-permission';
+
+import type { Browser } from 'webextension-polyfill';
 
 declare const browser: Browser;
 
