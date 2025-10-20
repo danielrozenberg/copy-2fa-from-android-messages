@@ -1,10 +1,10 @@
-import { globalIgnores } from '@eslint/config-helpers';
+import { defineConfig, globalIgnores } from '@eslint/config-helpers';
 import js from '@eslint/js';
 import json from '@eslint/json';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
   globalIgnores(['dist/']),
   {
     files: ['**/*.ts', 'eslint.config.mjs'],
